@@ -1,10 +1,7 @@
 
 export const fetchAllPokemon = () => {
-    $.ajax({
+    return( $.ajax({
         method: 'GET',
         url: '/api/pokemon'
-    }).then(
-        pokemon => console.log(pokemon),
-        error => console.log(error)
-    );
+    }))
 }
